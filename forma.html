@@ -7,6 +7,12 @@
 </head>
 <body>
     <h1>Formas un ievadlauku piemērs</h1>
+            <style>table, th, td {
+  border: 3px solid red;
+  border-collapse: collapse;
+} 
+       h2 {color:red; font-size: 20px}     
+            </style>
     <form>
         <p>Šodienas datums <input name="datums"></p>
         <p>Ja gribi uzzināt šodienas datumu, spied pogu DATUMS 
@@ -15,15 +21,27 @@
         <p>Ja gribi izdzēst datumua lodziņa saturu, spied pogu RESET
             <input value="RESET" type="reset">
         </p>
+        <h2>NESTRĀDĀ !!!</h2>
+        <table>
+            <td>
+        Lai uzzināt, kas par dienu būs pēc <input name="skaitliz"> dienas/ām, spied pogu OKAY 
+            <input onclick="saule.value=new Date();" name="pogah" value="OKAY" type="button">
+            <br>
+            <input name="saule">
+            </td>
+            </table>
+        <br>
     </form>
     <form>
         <div>1.skaitlis<input type="text" name="sk1"> </div>
+        <br>
         <div>
             <input value="X" name="reiz" onclick="rez.value=sk1.value*sk2.value" type="button">
             <input value="/" name="reiz" onclick="rez.value=sk1.value/sk2.value" type="button">
             <input value="+" name="reiz" onclick="rez.value=sk1.value-(-sk2.value)" type="button">
             <input value="-" name="reiz" onclick="rez.value=sk1.value-sk2.value" type="button">
         </div>
+        <br>
         <div>2.skaitlis<input type="text" name="sk2"> </div>
         <hr>
         <div>Rezultāts<input name="rez"> </div>
